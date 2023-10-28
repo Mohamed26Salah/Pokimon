@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABB2CA252AED612900474B85 /* PokimonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA242AED612900474B85 /* PokimonApp.swift */; };
+		ABB2CA272AED612900474B85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA262AED612900474B85 /* ContentView.swift */; };
+		ABB2CA292AED612A00474B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB2CA282AED612A00474B85 /* Assets.xcassets */; };
+		ABB2CA2C2AED612A00474B85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB2CA2B2AED612A00474B85 /* Preview Assets.xcassets */; };
+		ABB2CA362AED612A00474B85 /* PokimonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA352AED612A00474B85 /* PokimonTests.swift */; };
+		ABB2CA402AED612A00474B85 /* PokimonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA3F2AED612A00474B85 /* PokimonUITests.swift */; };
+		ABB2CA422AED612A00474B85 /* PokimonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA412AED612A00474B85 /* PokimonUITestsLaunchTests.swift */; };
+		ABB2CA4F2AED664F00474B85 /* PokimonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA4E2AED664F00474B85 /* PokimonCard.swift */; };
+		ABB2CA542AED6CB400474B85 /* PokimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA532AED6CB400474B85 /* PokimonViewModel.swift */; };
+		ABB2CA562AED6D5A00474B85 /* PokimonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA552AED6D5A00474B85 /* PokimonData.swift */; };
+		ABB2CA592AED6D9300474B85 /* OptionallyDecodable in Frameworks */ = {isa = PBXBuildFile; productRef = ABB2CA582AED6D9300474B85 /* OptionallyDecodable */; };
+		ABB2CA5B2AED6F3300474B85 /* Pokimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA5A2AED6F3300474B85 /* Pokimon.swift */; };
+		ABB2CA612AED6FBE00474B85 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABB2CA602AED6FBE00474B85 /* Alamofire */; };
+		ABB2CA632AED717A00474B85 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA622AED717A00474B85 /* NetworkManager.swift */; };
+		ABB2CA652AED719900474B85 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA642AED719900474B85 /* NetworkRouter.swift */; };
+		ABB2CA682AED722C00474B85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2CA672AED722C00474B85 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABB2CA322AED612A00474B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABB2CA192AED612900474B85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABB2CA202AED612900474B85;
+			remoteInfo = Pokimon;
+		};
+		ABB2CA3C2AED612A00474B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABB2CA192AED612900474B85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABB2CA202AED612900474B85;
+			remoteInfo = Pokimon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABB2CA212AED612900474B85 /* Pokimon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokimon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB2CA242AED612900474B85 /* PokimonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokimonApp.swift; sourceTree = "<group>"; };
+		ABB2CA262AED612900474B85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABB2CA282AED612A00474B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABB2CA2B2AED612A00474B85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABB2CA312AED612A00474B85 /* PokimonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokimonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB2CA352AED612A00474B85 /* PokimonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokimonTests.swift; sourceTree = "<group>"; };
+		ABB2CA3B2AED612A00474B85 /* PokimonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokimonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB2CA3F2AED612A00474B85 /* PokimonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokimonUITests.swift; sourceTree = "<group>"; };
+		ABB2CA412AED612A00474B85 /* PokimonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokimonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABB2CA4E2AED664F00474B85 /* PokimonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokimonCard.swift; sourceTree = "<group>"; };
+		ABB2CA532AED6CB400474B85 /* PokimonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokimonViewModel.swift; sourceTree = "<group>"; };
+		ABB2CA552AED6D5A00474B85 /* PokimonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokimonData.swift; sourceTree = "<group>"; };
+		ABB2CA5A2AED6F3300474B85 /* Pokimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokimon.swift; sourceTree = "<group>"; };
+		ABB2CA622AED717A00474B85 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ABB2CA642AED719900474B85 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		ABB2CA672AED722C00474B85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABB2CA1E2AED612900474B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2CA592AED6D9300474B85 /* OptionallyDecodable in Frameworks */,
+				ABB2CA612AED6FBE00474B85 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2CA2E2AED612A00474B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2CA382AED612A00474B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABB2CA182AED612900474B85 = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA232AED612900474B85 /* Pokimon */,
+				ABB2CA342AED612A00474B85 /* PokimonTests */,
+				ABB2CA3E2AED612A00474B85 /* PokimonUITests */,
+				ABB2CA222AED612900474B85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABB2CA222AED612900474B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA212AED612900474B85 /* Pokimon.app */,
+				ABB2CA312AED612A00474B85 /* PokimonTests.xctest */,
+				ABB2CA3B2AED612A00474B85 /* PokimonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABB2CA232AED612900474B85 /* Pokimon */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA662AED722000474B85 /* Resources */,
+				ABB2CA5C2AED6F7200474B85 /* NetworkLayer */,
+				ABB2CA522AED6C8F00474B85 /* Model */,
+				ABB2CA512AED6C8A00474B85 /* ViewModel */,
+				ABB2CA502AED6C8500474B85 /* View */,
+				ABB2CA282AED612A00474B85 /* Assets.xcassets */,
+				ABB2CA2A2AED612A00474B85 /* Preview Content */,
+			);
+			path = Pokimon;
+			sourceTree = "<group>";
+		};
+		ABB2CA2A2AED612A00474B85 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA2B2AED612A00474B85 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABB2CA342AED612A00474B85 /* PokimonTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA352AED612A00474B85 /* PokimonTests.swift */,
+			);
+			path = PokimonTests;
+			sourceTree = "<group>";
+		};
+		ABB2CA3E2AED612A00474B85 /* PokimonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA3F2AED612A00474B85 /* PokimonUITests.swift */,
+				ABB2CA412AED612A00474B85 /* PokimonUITestsLaunchTests.swift */,
+			);
+			path = PokimonUITests;
+			sourceTree = "<group>";
+		};
+		ABB2CA502AED6C8500474B85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA242AED612900474B85 /* PokimonApp.swift */,
+				ABB2CA262AED612900474B85 /* ContentView.swift */,
+				ABB2CA4E2AED664F00474B85 /* PokimonCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABB2CA512AED6C8A00474B85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA532AED6CB400474B85 /* PokimonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ABB2CA522AED6C8F00474B85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA552AED6D5A00474B85 /* PokimonData.swift */,
+				ABB2CA5A2AED6F3300474B85 /* Pokimon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABB2CA5C2AED6F7200474B85 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA622AED717A00474B85 /* NetworkManager.swift */,
+				ABB2CA642AED719900474B85 /* NetworkRouter.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		ABB2CA662AED722000474B85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2CA672AED722C00474B85 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABB2CA202AED612900474B85 /* Pokimon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB2CA452AED612A00474B85 /* Build configuration list for PBXNativeTarget "Pokimon" */;
+			buildPhases = (
+				ABB2CA1D2AED612900474B85 /* Sources */,
+				ABB2CA1E2AED612900474B85 /* Frameworks */,
+				ABB2CA1F2AED612900474B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pokimon;
+			packageProductDependencies = (
+				ABB2CA582AED6D9300474B85 /* OptionallyDecodable */,
+				ABB2CA602AED6FBE00474B85 /* Alamofire */,
+			);
+			productName = Pokimon;
+			productReference = ABB2CA212AED612900474B85 /* Pokimon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABB2CA302AED612A00474B85 /* PokimonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB2CA482AED612A00474B85 /* Build configuration list for PBXNativeTarget "PokimonTests" */;
+			buildPhases = (
+				ABB2CA2D2AED612A00474B85 /* Sources */,
+				ABB2CA2E2AED612A00474B85 /* Frameworks */,
+				ABB2CA2F2AED612A00474B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABB2CA332AED612A00474B85 /* PBXTargetDependency */,
+			);
+			name = PokimonTests;
+			productName = PokimonTests;
+			productReference = ABB2CA312AED612A00474B85 /* PokimonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABB2CA3A2AED612A00474B85 /* PokimonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB2CA4B2AED612A00474B85 /* Build configuration list for PBXNativeTarget "PokimonUITests" */;
+			buildPhases = (
+				ABB2CA372AED612A00474B85 /* Sources */,
+				ABB2CA382AED612A00474B85 /* Frameworks */,
+				ABB2CA392AED612A00474B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABB2CA3D2AED612A00474B85 /* PBXTargetDependency */,
+			);
+			name = PokimonUITests;
+			productName = PokimonUITests;
+			productReference = ABB2CA3B2AED612A00474B85 /* PokimonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABB2CA192AED612900474B85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					ABB2CA202AED612900474B85 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					ABB2CA302AED612A00474B85 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = ABB2CA202AED612900474B85;
+					};
+					ABB2CA3A2AED612A00474B85 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = ABB2CA202AED612900474B85;
+					};
+				};
+			};
+			buildConfigurationList = ABB2CA1C2AED612900474B85 /* Build configuration list for PBXProject "Pokimon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABB2CA182AED612900474B85;
+			packageReferences = (
+				ABB2CA572AED6D9300474B85 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */,
+				ABB2CA5F2AED6FBE00474B85 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = ABB2CA222AED612900474B85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABB2CA202AED612900474B85 /* Pokimon */,
+				ABB2CA302AED612A00474B85 /* PokimonTests */,
+				ABB2CA3A2AED612A00474B85 /* PokimonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABB2CA1F2AED612900474B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2CA2C2AED612A00474B85 /* Preview Assets.xcassets in Resources */,
+				ABB2CA292AED612A00474B85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2CA2F2AED612A00474B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2CA392AED612A00474B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABB2CA1D2AED612900474B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2CA272AED612900474B85 /* ContentView.swift in Sources */,
+				ABB2CA4F2AED664F00474B85 /* PokimonCard.swift in Sources */,
+				ABB2CA542AED6CB400474B85 /* PokimonViewModel.swift in Sources */,
+				ABB2CA632AED717A00474B85 /* NetworkManager.swift in Sources */,
+				ABB2CA682AED722C00474B85 /* Constants.swift in Sources */,
+				ABB2CA5B2AED6F3300474B85 /* Pokimon.swift in Sources */,
+				ABB2CA252AED612900474B85 /* PokimonApp.swift in Sources */,
+				ABB2CA562AED6D5A00474B85 /* PokimonData.swift in Sources */,
+				ABB2CA652AED719900474B85 /* NetworkRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2CA2D2AED612A00474B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2CA362AED612A00474B85 /* PokimonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB2CA372AED612A00474B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2CA422AED612A00474B85 /* PokimonUITestsLaunchTests.swift in Sources */,
+				ABB2CA402AED612A00474B85 /* PokimonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABB2CA332AED612A00474B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABB2CA202AED612900474B85 /* Pokimon */;
+			targetProxy = ABB2CA322AED612A00474B85 /* PBXContainerItemProxy */;
+		};
+		ABB2CA3D2AED612A00474B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABB2CA202AED612900474B85 /* Pokimon */;
+			targetProxy = ABB2CA3C2AED612A00474B85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ABB2CA432AED612A00474B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABB2CA442AED612A00474B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABB2CA462AED612A00474B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pokimon/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salah.12488.Pokimon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABB2CA472AED612A00474B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pokimon/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salah.12488.Pokimon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ABB2CA492AED612A00474B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salah.12488.PokimonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokimon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokimon";
+			};
+			name = Debug;
+		};
+		ABB2CA4A2AED612A00474B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salah.12488.PokimonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokimon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokimon";
+			};
+			name = Release;
+		};
+		ABB2CA4C2AED612A00474B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salah.12488.PokimonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pokimon;
+			};
+			name = Debug;
+		};
+		ABB2CA4D2AED612A00474B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salah.12488.PokimonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pokimon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABB2CA1C2AED612900474B85 /* Build configuration list for PBXProject "Pokimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2CA432AED612A00474B85 /* Debug */,
+				ABB2CA442AED612A00474B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB2CA452AED612A00474B85 /* Build configuration list for PBXNativeTarget "Pokimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2CA462AED612A00474B85 /* Debug */,
+				ABB2CA472AED612A00474B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB2CA482AED612A00474B85 /* Build configuration list for PBXNativeTarget "PokimonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2CA492AED612A00474B85 /* Debug */,
+				ABB2CA4A2AED612A00474B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB2CA4B2AED612A00474B85 /* Build configuration list for PBXNativeTarget "PokimonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB2CA4C2AED612A00474B85 /* Debug */,
+				ABB2CA4D2AED612A00474B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABB2CA572AED6D9300474B85 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/idrougge/OptionallyDecodable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		ABB2CA5F2AED6FBE00474B85 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABB2CA582AED6D9300474B85 /* OptionallyDecodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABB2CA572AED6D9300474B85 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */;
+			productName = OptionallyDecodable;
+		};
+		ABB2CA602AED6FBE00474B85 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABB2CA5F2AED6FBE00474B85 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ABB2CA192AED612900474B85 /* Project object */;
+}
